@@ -10,5 +10,6 @@ for letter in xy[0]:
         new_phrase += letter.lower()
 
 ouf = open(xy[1], "w")
-ouf.write(new_phrase)
+for item in new_phrase:
+    ouf.write(item + "\n")
 ouf.close
